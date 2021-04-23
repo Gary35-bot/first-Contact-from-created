@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form
+      id="Contact-form"
+      action="https://formspree.io/f/mpzkwndo"
+      method="POST"
+    >
+      >
+      <!--heading-->
+      <h1>Contact Form</h1>
+      <div class="from-group">
+        <div>
+          <label class="form-label" for="Your name">Your name</label>
+          <input
+            class="form-input"
+            type="text"
+            id="name"
+            required
+            placeholder="full name"
+          />
+        </div>
+
+        <div class="from-group">
+          <label class="form-label" for="email">Your Email</label>
+          <input
+            class="form-input"
+            name="Email"
+            id="email"
+            type="email"
+            required
+            placeholder="examplegmail@.com"
+          />
+        </div>
+
+        <div class="from-group">
+          <label class="form-label" for="Phone number">Phone Number</label>
+          <input
+            class="form-input"
+            type="tel"
+            id="contact"
+            name="Phone number"
+            placeholder="079 124 4577"
+          />
+        </div>
+
+        <div class="from-group">
+          <label class="form-label" for="Message">Your Message</label>
+          <textarea
+            class="form-input"
+            type="text"
+            id="message"
+            min="30"
+            max="50"
+            placeholder="type message"
+          ></textarea>
+        </div>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
